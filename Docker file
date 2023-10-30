@@ -1,0 +1,5 @@
+FROM python:3.8-slim
+WORKDIR /app
+COPY your_script.py /app/
+RUN pip install pytube youtube-transcript-api
+CMD ["python", "your_script.py"]
